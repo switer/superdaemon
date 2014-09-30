@@ -1,20 +1,15 @@
-# node-supervisor
+# superdaemon
 
-A little supervisor script for nodejs. It runs your program, and
-watches for code changes, so you can have hot-code reloading-ish
-behavior, without worrying about memory leaks and making sure you
-clean up all the inter-module references, and without a whole new
-`require` system.
+Superdaemon is base on [node-supervisor](https://github.com/isaacs/node-supervisor), but it support running multiple
+bin in the same time.
+## superdaemon -?
 
-## node-supervisor -?
-
-
-    Node Supervisor is used to restart programs when they crash.
+    Node Superdaemon is used to restart programs when they crash.
     It can also be used to restart programs when a *.js file changes.
 
     Usage:
-      supervisor [options] <program>
-      supervisor [options] -- <program> [args ...]
+      superdaemon [options] <program>
+      superdaemon [options] -- <program> [args ...]
 
     Required:
       <program>
@@ -53,7 +48,7 @@ clean up all the inter-module references, and without a whole new
 
       -n|--no-restart-on error|exit
         Don't automatically restart the supervised program if it ends.
-        Supervisor will wait for a change in the source files.
+        Superdaemon will wait for a change in the source files.
         If "error", an exit code of 0 will still restart.
         If "exit", no restart regardless of exit code.
 
@@ -68,18 +63,18 @@ clean up all the inter-module references, and without a whole new
         Suppress DEBUG messages
 
     Examples:
-      supervisor myapp.js
-      supervisor myapp.coffee
-      supervisor -w scripts -e myext -x myrunner myapp
-      supervisor -w lib,server.js,config.js server.js
-      supervisor -- server.js -h host -p port
+      superdaemon myapp.js
+      superdaemon myapp.coffee
+      superdaemon -w scripts -e myext -x myrunner myapp
+      superdaemon -w lib,server.js,config.js server.js
+      superdaemon -- server.js -h host -p port
 
 
 ## Simple Install
 
 Just run:
 
-    npm install supervisor -g
+    npm install superdaemon -g
 
 ## Fancy Install
 
