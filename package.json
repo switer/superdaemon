@@ -1,20 +1,23 @@
 {
-    "name": "superdaemon",
-    "version": "0.0.1",
-    "description": "Watch and execute commands, support spawn cli, base on supervisor",
-    "author": "switer",
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:switer/superdaemon.git"
-    },
-    "bugs": "https://github.com/switer/superdaemon.git/issues",
-    "homepage": "https://github.com/switer/superdaemon",
-    "main": "lib/superdaemon.js",
-    "bin": {
-        "superdaemon": "lib/cli-wrapper.js"
-    },
-    "engines": {
-        "node": ">=0.6.0"
-    },
-    "preferGlobal": true
+  "name": "superdaemon",
+  "version": "0.0.1",
+  "description": "Watch and execute commands, support spawn cli, base on supervisor",
+  "author": "switer",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:switer/superdaemon.git"
+  },
+  "bugs": "https://github.com/switer/superdaemon.git/issues",
+  "homepage": "https://github.com/switer/superdaemon",
+  "main": "lib/superdaemon.js",
+  "bin": {
+    "superdaemon": "lib/cli-wrapper.js"
+  },
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "colors": "^0.6.2"
+  }
 }

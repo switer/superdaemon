@@ -2,7 +2,7 @@
 
 Superdaemon is base on [node-supervisor](https://github.com/isaacs/node-supervisor), but it support running multiple
 bin in the same time.
-## superdaemon -?
+## superdaemon
 
     Node Superdaemon is used to restart programs when they crash.
     It can also be used to restart programs when a *.js file changes.
@@ -32,19 +32,6 @@ bin in the same time.
       -e|--extensions <extensions>
         A comma-delimited list of file extensions to watch for changes.
         Default is 'node,js' (or when CoffeeScript, 'node,js,coffee,litcoffee').
-
-      -x|--exec <executable>
-        The executable that runs the specified program.
-        Default is 'node'
-
-      --debug
-        Start node with --debug flag.
-
-      --debug-brk
-        Start node with --debug-brk flag.
-
-      --harmony
-        Start node with --harmony flag.
 
       -n|--no-restart-on error|exit
         Don't automatically restart the supervised program if it ends.
