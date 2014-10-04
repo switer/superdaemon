@@ -1,6 +1,6 @@
 {
   "name": "superdaemon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Watch and execute commands, support spawn cli, base on supervisor",
   "author": {
     "name": "switer"
