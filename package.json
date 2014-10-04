@@ -2,12 +2,19 @@
   "name": "superdaemon",
   "version": "0.1.0",
   "description": "Watch and execute commands, support spawn cli, base on supervisor",
-  "author": "switer",
+  "author": {
+    "name": "switer"
+  },
+  "scripts": {
+    "test": "node test/test"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:switer/superdaemon.git"
   },
-  "bugs": "https://github.com/switer/superdaemon/issues",
+  "bugs": {
+    "url": "https://github.com/switer/superdaemon/issues"
+  },
   "homepage": "https://github.com/switer/superdaemon",
   "main": "lib/superdaemon.js",
   "bin": {
