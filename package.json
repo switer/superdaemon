@@ -1,12 +1,13 @@
 {
   "name": "superdaemon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Watch and execute commands, support spawn cli, base on supervisor",
   "author": {
     "name": "switer"
   },
   "scripts": {
-    "test": "node test/test"
+    "test": "node test/test",
+    "deploy": "dos2unix lib/cli-wrapper.js & npm publish"
   },
   "repository": {
     "type": "git",
